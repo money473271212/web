@@ -95,7 +95,7 @@ Vue.mixin({
 
       switch (token_name) {
         case 'ETC':
-          qr_string = `ethereum:${address}`;
+          qr_string = `ethereum:${address}?value=${value}`;
           break;
 
         case 'cUSD':
@@ -107,7 +107,7 @@ Vue.mixin({
           break;
 
         case 'ZIL':
-          qr_string = `zilliqa:${address}`;
+          qr_string = `zilliqa://${address}?amount=${value}`;
           break;
       }
 
